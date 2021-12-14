@@ -2,7 +2,7 @@ package Task_1;
 import java.util.Scanner;
 
 public class PalindromeFinder {
-    public static void main (String args[]){
+    public static void main (String[] args){
         System.out.println("This code will help you to figure out is the number you enter is palindrome or not.");
         System.out.println("Please, enter your number: ");
         int enteredNumber = new Scanner(System.in).nextInt();
@@ -23,10 +23,7 @@ public class PalindromeFinder {
             reverse = reverse * 10 + remainder;
             calculation=calculation/10;
         }
-        if (number==reverse){
-            return true;
-        }
-        return false;
+        return number == reverse;
     }
 
 }

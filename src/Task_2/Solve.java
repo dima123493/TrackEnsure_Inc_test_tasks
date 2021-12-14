@@ -44,9 +44,9 @@ class RotateArrayToTheRight {
 
     public static void print(int[][] array) {
         int numbers = array.length;
-        for(int i = 0; i < numbers; ++i) {
-            for(int j = 0; j < numbers; ++j) {
-                System.out.print(array[i][j]);
+        for (int[] ints : array) {
+            for (int j = 0; j < numbers; ++j) {
+                System.out.print(ints[j]);
                 System.out.print(' ');
             }
             System.out.println();
